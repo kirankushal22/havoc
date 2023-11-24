@@ -1,0 +1,215 @@
+.bg-img{
+    background-image: url("../img/Picture1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+.navbar-brand:focus, .navbar-brand:hover{
+    color:#dc2633 !important;
+}
+.nav-item .nav-link{
+    color: white;
+    margin:0px 8px;
+}
+.nav-link.active{
+    color:#dc2633 !important;
+    border-bottom: 1px solid #dc2633;
+}
+.text-red{
+    color:#dc2633;
+}
+.btn-primary{
+    background-color:#dc2633 !important;
+    color: white !important;
+    border:none !important;
+}
+.maintxt{
+    font-size: 4rem;
+    color: white;
+    
+}
+.maintxt2{
+    display: block;
+    color:#dc2633;
+    font-weight: 700;
+}
+.models img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border:2px solid #dc2633;
+}
+.models h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+/* -------------pricing------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-blue-900: #081030;
+  --c-blue-800: #111b40;
+  --c-blue-700: #152148;
+  --c-blue-500: #1d7bdb;
+  --c-blue-300: #293359;
+  --c-blue-200: #4e5985;
+  --c-blue-100: #dfe8ff;
+  --c-green-400: #4ade80;
+}
+
+/* Some basic CSS overrides */
+
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+
+
+/* End basic CSS override */
+.price-table {
+  background-color: #0000009e;
+  border-radius: 16px;
+  max-width: 375px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  
+}
+
+.price-table .price {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  color: #fff;
+}
+.price-table .price small {
+  font-size: 1.25rem;
+  font-weight: 400;
+  position: absolute;
+  left: -1.5ch;
+}
+.price-table .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 16px;
+  color: #fff;
+}
+.price-table .description {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 4px;
+}
+.name{
+    color: white;
+}
+
+.features {
+  margin-top: 32px;
+}
+
+.feature {
+  position: relative;
+}
+.feature + .feature {
+  margin-top: 16px;
+}
+.feature summary {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+.feature summary::-webkit-details-marker {
+  display: none;
+}
+.feature[open] summary:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 50;
+}
+.feature[open] div {
+  -webkit-animation: scale 0.15s ease;
+          animation: scale 0.15s ease;
+}
+.feature .checkmark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--c-green-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.feature .checkmark svg {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+.feature .question-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.feature .answer {
+  padding: 12px;
+  background-color: var(--c-blue-800);
+  border-radius: 6px;
+  position: absolute;
+  top: -12px;
+  z-index: 100;
+  transform: translatey(-100%) translatex(-50%);
+  transform-origin: bottom center;
+  width: 80%;
+  left: 50%;
+  border: 1px solid var(--c-blue-300);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes scale {
+  0% {
+    transform: translatey(-100%) translatex(-50%) scale(0);
+  }
+  100% {
+    transform: translatey(-100%) translatex(-50%) scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translatey(-100%) translatex(-50%) scale(0);
+  }
+  100% {
+    transform: translatey(-100%) translatex(-50%) scale(1);
+  }
+}
